@@ -38,6 +38,13 @@ public class program {
 		System.out.println(obj);	
 		}
 			
+		
+		System.out.println("\nTest Seller Update");
+		seller = sellerDao.findById(1);
+		seller.setName("Maria do Bairro");
+		sellerDao.update(seller);
+		System.out.println("Updated");
 	}
-
 }
+
+
